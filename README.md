@@ -2,14 +2,20 @@
 
 ## オレオレTodoistツールです
 
-- タスクに付いているラベルを必要な時間（分）として集計、全てのタスクの完了見積もり時刻を計算するブックマークレットです
+タスクに付いているラベルを必要な時間（分）として集計、全てのタスクの完了見積もり時刻を計算するブックマークレットです
 
 ## 使用方法
 
-- 下記の形式で作成したコードをブックマークに追加し、WEB版のTodoistページで実行します
+下記の形式で作成したコードをブックマークに追加し、WEB版のTodoistページで実行します
 
 ```
 javascript:[ysTodoistBookmarklet.min.jsのコード]
+```
+
+もしくは、下記コードをブックマークレットとすることで、最新のysTodistBookmaeklet.jsを利用します。（github上のjsを参照する）
+
+```
+javascript:!function(d,s){s=d.createElement("script");s.src="https://rawgit.com/guutarayossiy/ysTodoistTool/master/ysTodoistBookmarklet.js";d.body.appendChild(s)}(document)
 ```
 
 ## 作成の経緯とか
