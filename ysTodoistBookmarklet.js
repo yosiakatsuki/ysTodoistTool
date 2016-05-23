@@ -134,7 +134,7 @@
   //タイマーセット
   setInterval(mjikan, 1000);
   //フィルターが変更されたら再度時間計算
-  $('#filter').change(function(){$('#filter').blur();mjikan});
+  $('#filter').change(function(){$('#filter').blur();mjikan()});
   $('#filter').focus(function(){changeflg=1});
   $('#filter').blur(function(){changeflg=0});
 })
