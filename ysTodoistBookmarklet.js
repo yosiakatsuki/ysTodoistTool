@@ -5,7 +5,7 @@
  */
 !function(d,f,s){
   s=d.createElement("script");
-  s.src="//j.mp/1bPoAXq";
+  s.src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js";
   s.onload=function(){
     f(jQuery.noConflict(1))
   };
