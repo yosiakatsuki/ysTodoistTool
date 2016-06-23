@@ -29,4 +29,4 @@ gulp.task 'watch',->
 
 
 # デフォルトタスク
-gulp.task 'default', ['watch']
+gulp.task 'default', ['uglify','watch']

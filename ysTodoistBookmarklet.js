@@ -14,7 +14,7 @@
 (document,function($){
   //初期化
   $('#mtime-outer').remove();
-  $('body').append('<div id="mtime-outer" style="position:fixed;bottom:0;right:0;padding:20px;background-color:#eee;"><p>フィルタ：<select id="filter" style="background-color:#FFF;"><option value="ALL">ALL</option></select></p><p>開始時間：<input type="checkbox" name="chkstime" id="chkstime" /><input type="time" name="starttime" id="starttime" value="09:30" disabled /></p><p>見積時間：<span id="mtime-hour"></span>h (<span id="mtime"></span>m)</p><p style="font-weight:bold;">完了見込：<span id="kantime"></span></p></div>');
+  $('body').append('<div id="mtime-outer" style="position:fixed;bottom:0;right:0;padding:20px;background-color:#eee;"><p>フィルタ：<select id="filter" style="background-color:#FFF;"><option value="ALL">ALL</option></select></p><p>開始時間：<input type="checkbox" name="chkstime" id="chkstime" /><input type="time" name="starttime" id="starttime" value="09:30" disabled /></p><p>　残件数：<span id="task-cnt"></span>件</p><p>見積時間：<span id="mtime-hour"></span>h (<span id="mtime"></span>m)</p><p style="font-weight:bold;">完了見込：<span id="kantime"></span></p></div>');
 
   mode=0;
   changeflg=0;
@@ -101,6 +101,8 @@
         }
       }
     }
+    //件数を更新
+    $('#task-cnt').text(tlist.length);
     //分の情報を更新
     $('#mtime').text(inttime);
     //時間の情報を更新
